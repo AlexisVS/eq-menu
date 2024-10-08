@@ -59,7 +59,7 @@ add_action('init', function () {
                         "view"   => "list.default"
                     ]
                 ]
-            ], 'eQual', 'User', 'edit_posts', 'dashicons-menu');
+            ], 'eQual', 'Settings', 'edit_posts', 'dashicons-menu');
         });
     }
 });
