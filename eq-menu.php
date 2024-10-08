@@ -7,7 +7,7 @@
  * Author URI:      https://github.com/AlexisVS
  * Text Domain:     eq-menu
  * Domain Path:     /
- * Version:         0.1.3
+ * Version:         0.1.4
  * Requires at least: 0.1.2
  * Requires: eq-run, eq-auth
  *
@@ -28,11 +28,6 @@ add_action('init', function () {
         // Add admin menu
         add_action('admin_menu', function () {
 
-            $menu = __DIR__ . '/admin/assets/menu.json';
-            $menu1 = __DIR__ . '/admin/assets/menu1.json';
-
-            eq_add_menu($menu, 'eQual', 'eQual Menu', 'edit_posts', 'dashicons-menu');
-            eq_add_menu($menu1, 'eQual', 'Test', 'edit_posts', 'dashicons-menu');
             eq_add_menu([
                 [
                     "id"          => "settings.settings.settings_values",
@@ -64,7 +59,7 @@ add_action('init', function () {
                         "view"   => "list.default"
                     ]
                 ]
-            ], 'eQual', 'Test2', 'edit_posts', 'dashicons-menu');
+            ], 'eQual', 'User', 'edit_posts', 'dashicons-menu');
         });
     }
 });
